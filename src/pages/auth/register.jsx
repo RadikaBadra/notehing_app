@@ -1,6 +1,6 @@
 import { redirect, Form, useNavigation, useActionData } from "react-router-dom";
 import Button from "../../components/button";
-import { InputBase } from "@mantine/core";
+import { InputBase, PasswordInput } from "@mantine/core";
 import { z } from "zod";
 import { AuthProvider } from "./../../AuthProvider";
 
@@ -83,19 +83,17 @@ export default function PageRegister() {
             name="email"
             error={errors?.email?.[0]}
           />
-          <InputBase
+          <PasswordInput
             withAsterisk
             mt={"md"}
-            type="password"
             label="Password"
             description="masukkan password anda"
             name="password"
             error={errors?.password?.[0]}
           />
-          <InputBase
+          <PasswordInput
             withAsterisk
             mt={"md"}
-            type="password"
             label="Konfirmasi Password"
             description="masukkan kembali password anda"
             name="confirmPassword"

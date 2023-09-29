@@ -150,9 +150,7 @@ export default function DefaultLayout() {
           </Button>
         </div>
       </div>
-      <LoadingOverlay visible={navigation.state === "loading"}>
-        Loading
-      </LoadingOverlay>
+      <LoadingOverlay visible={navigation.state === "loading"} />
       <Outlet />
     </div>
   );

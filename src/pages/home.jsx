@@ -23,9 +23,9 @@ export default function PageHome() {
 
   return (
     <>
-      <div className="wrapper m-auto">
-        {!notes && (
-          <div className="h-[50vh] flex items-center justify-center m-auto">
+      <div className="m-auto">
+        {notes.length == 0 && (
+          <div className="h-[50vh] flex items-center justify-center">
             <h1 className="text-center">catatan tidak ditemukan</h1>
           </div>
         )}
@@ -47,7 +47,7 @@ export default function PageHome() {
                         <Button
                           type="submit"
                           key={data.id}
-                          className="bg-red-500 duration-500	 hover:bg-red-600 text-white py-2 px-4"
+                          className="bg-red-500 duration-500 hover:bg-red-600 text-white py-2 px-4"
                         >
                           delete
                         </Button>
