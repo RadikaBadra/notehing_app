@@ -28,5 +28,5 @@ to run the program
 -    Delete Note
 -    Fully Mantine Components
 -    Error Handling
--    Archieve
+-    Archive
 -    To Do List
