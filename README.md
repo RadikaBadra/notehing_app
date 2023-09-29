@@ -26,6 +26,7 @@ to run the program
 
 # On Progress Feature
 -    Delete Note
+-    Fully Mantine Components
 -    Error Handling
 -    Archieve
 -    To Do List
