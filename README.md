@@ -6,3 +6,18 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Quick Start
+
+clone this repository
+
+    git clone https://github.com/RadikaBadra/notehing_app.git
+
+then, run this command
+
+    cd notehing_app
+    npm install
+
+to run the program
+
+    npm run dev
