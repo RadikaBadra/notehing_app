@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Button from "../components/button";
 import { useNavigate, Form, useActionData } from "react-router-dom";
 import PopUp from "../components/PopUp";
-import { InputBase, Textarea } from "@mantine/core";
+import { InputBase, LoadingOverlay, Textarea } from "@mantine/core";
 import Header from "../components/header";
 import { z } from "zod";
 
@@ -62,8 +62,6 @@ export default function DefaultLayout() {
   const closePopUp = () => {
     setPopUp(false);
   };
-
-  console.log(note);
 
   useEffect(() => {
     if (note) {
@@ -152,7 +150,9 @@ export default function DefaultLayout() {
           </Button>
         </div>
       </div>
-      {navigation.state === "loading" ? <popUp>spinner</popUp> : null}
+      <LoadingOverlay visible={navigation.state === "loading"}>
+        Loading
+      </LoadingOverlay>
       <Outlet />
     </div>
   );

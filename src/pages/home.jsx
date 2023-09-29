@@ -33,21 +33,20 @@ export default function PageHome() {
           {notes &&
             notes.map((data) => {
               return (
-                <>
-                  <Card key={data.id}>
+                <div key={data.id}>
+                  <Card>
                     <Card.title>{data.title}</Card.title>
                     <Card.body>{data.content}</Card.body>
                     <Card.footer>
-                      {/* <Button className="bg-gray-500 duration-500	 hover:bg-gray-600 text-white py-2 px-4">
-                        <FaArchive />
-                        archive
-                      </Button> */}
                       <Form method="delete">
-                        <InputBase defaultValue={data.id} name="id" display={"none"}/>
+                        <InputBase
+                          defaultValue={data.id}
+                          name="id"
+                          display={"none"}
+                        />
                         <Button
                           type="submit"
                           key={data.id}
-                          // leftIcon={<FaPen />}
                           className="bg-red-500 duration-500	 hover:bg-red-600 text-white py-2 px-4"
                         >
                           delete
@@ -57,7 +56,6 @@ export default function PageHome() {
                         component={Link}
                         to={data.id + "/tulis"}
                         key={data.id}
-                        // leftIcon={<FaPen />}
                         className="bg-blue-500 duration-500	 hover:bg-blue-600 text-white py-2 px-4"
                       >
                         tulis
@@ -65,7 +63,7 @@ export default function PageHome() {
                     </Card.footer>
                   </Card>
                   <Outlet />
-                </>
+                </div>
               );
             })}
         </div>
