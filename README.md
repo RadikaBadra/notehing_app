@@ -24,3 +24,8 @@ to run the program
 
     npm run dev
 
+#On Progress Feature
+-    Delete Note
+-    Error Handling
+-    Archieve
+-    To Do List
