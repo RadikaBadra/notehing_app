@@ -8,7 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # Quick Start
-
+first of all u need to clone the backend repo and follow the instruction here
+[note_app_api
+](https://github.com/RadikaBadra/note_app_api)
 clone this repository
 
     git clone https://github.com/RadikaBadra/notehing_app.git
@@ -21,3 +23,4 @@ then, run this command
 to run the program
 
     npm run dev
+
